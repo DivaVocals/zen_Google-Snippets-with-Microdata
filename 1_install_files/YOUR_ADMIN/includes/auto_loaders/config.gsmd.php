@@ -1,5 +1,5 @@
 <?php
-// Super Orders
+// Google Snippets with Microdata
 
 if (!defined('IS_ADMIN_FLAG')) {
   die('Illegal Access');
