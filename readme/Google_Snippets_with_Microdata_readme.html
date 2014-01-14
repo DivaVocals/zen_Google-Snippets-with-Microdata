@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+  <meta name="ROBOTS" content="nofollow,noindex">  
+  <meta name="ROBOTS" content="noarchive">  
+  <meta http-equiv="pragma" content="no-cache">  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">  
+  <meta http-equiv="content-language" content="en">  
+  <meta name="author" content="JT of GTICustom, C Jones Over the Hill Web Consulting (http://overthehillweb.com), Loose Chicken Software Development, david@loosechicken.com">  
+  <meta name="description" content="Super Orders is exactly what its name implies: Zen Cart order management on steroids">
+  <title>Super Orders 4.0.7</title>
+    
+  <link rel="stylesheet" type="text/css" href="includes/css/stylesheet.css">  
+  <script type="text/javascript" src="includes/jscript/jscript_tabs.js"></script>
+  </head>
+  <body>
+<div id="wrapper">
+<h2>Super Orders 4.0.7</h2>
+<!--<p>Support thread: <a href="http://www.zen-cart.com/forum/showthread.php?t=44668" target="_blank">http://www.zen-cart.com/forum/showthread.php?p=886839</a><br>
+Download link: <a href="http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=257" target="_blank">http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=743</a></p>-->
+<div id="slidetabsmenu" style="display: none;">
+<ul>
+
+  <li> <a onClick="expandcontent('sc1', this)" href="javascript:void(0)"><span>Purpose &amp; Aim</span></a></li>
+  <li> <a onClick="expandcontent('sc2', this)" href="javascript:void(0)"><span>Installation &amp; Settings</span></a></li>
+  <li> <a onClick="expandcontent('sc3', this)" href="javascript:void(0)"><span>Configure &amp; Features</span></a></li>
+  <li> <a onClick="expandcontent('sc4', this)" href="javascript:void(0)"><span>Add-Ons Integration</span></a></li>
+  <li> <a onClick="expandcontent('sc5', this)" href="javascript:void(0)"><span>Files</span></a></li>
+  <li> <a onClick="expandcontent('sc6', this)" href="javascript:void(0)"><span>Credits &amp; History</span></a></li>
+  <li> <a onClick="expandcontent('sc7', this)" href="javascript:void(0)"><span>License</span></a></li></ul>
+</div>
+<br style="clear: both;">
+
+
+<!--Begin tabcontainer-->
+<div id="tabcontentcontainer">
+
+
+<!--Begin sc1-->
+<div class="tabcontent" id="sc1" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+<h3>PURPOSE &amp; AIM</h3>
+
+<fieldset>
+<legend>What is Google Snippets with Microdata?</legend>
+<p>This addon will add rich snippets feature to your Zen Cart online shop over votes for Zen Cart products in html 5 Microformats.</p>
+
+<p>It is based on the Pro-Webs <a href="http://pro-webs.net/blog/2012/09/25/customizing-google-snippets-with-schema-org-microdata/" title="Customizing Google Snippets with Schema.org Microdata">tutorial to implement 
+Rich Snippets Product Microdata for your Zen Cart product pages</a>. After install you will see new option in administration to configure the various microdata options.</p>
+
+<p><strong>The applicable tags available currently for Rich Snippets Product are as follows:</strong></p>
+<ul>
+<li>name - name of the product.</li>
+<li>description - A short description of the item.</li>
+<li>image - URL of an image of the item.</li>
+<li>price - The price of the product. A floating point number. You may use either a decimal point ('.') or a comma (',') as a separator.</li>
+<li>currency - The currency used to describe the product price, in three-letter ISO format.</li>
+<li>quantity - Number in stock</li>
+<li>availability - out_of_stock, in_stock</li>
+<li>brand/manufacturer - The brand of the product.</li>
+<li>condition - new, used or refurbished.</li>
+<li>identifier - asin, isbn, mpn, sku or upc.</li>
+<li>breadcrumb - Bread crumbs, path to category</li>
+<li>category - The product category—for example, "<code>Books-Fiction</code>", "<code>Tools</code>", or "<code>Cars</code>". You can include multiple categories. Any value is accepted, but Google recognizes the categories described <a target="_blank" href="http://www.google.com/support/merchants/bin/answer.py?answer=160081">in this article</a>.</li>
+<li>payment methods</li>
+<li>delivery lead time</li>
+<li>offer delivery area</li>
+</ul>
+
+
+<!--<p>Any questions, just hit the forums: http://www.zen-cart.com/forum/showthread.php?t=44668</p>-->
+</fieldset>
+<p>Google's snippets are still based on many of the same signals as they have been. Quality content, excellent navigation, headings and such are still key. However, providing Microdata helps Google understand the parts of product data that they may otherwise wash along with menus, footer text etc. This simply helps Google better identify the fact that this is a product and get the pertinent data for the product such as name, price, model etc to produce a better, more informative snippet in search results.</p>
+
+<strong>!!READ EVERYTHING!!</strong>
+<p>It is very strongly recommend you read through the *entire* FEATURES section. There you will find out exactly what Google Snippets with Microdata can do.</p>
+</div>
+</div>
+</div>
+<!--End sc1-->
+
+
+<!--Begin sc2-->
+<div class="tabcontent" id="sc2" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+<h3>INSTALLATION </h3>
+
+<div class="boldemphasis">
+<p>*** READ EVERYTHING IN THIS README BEFORE YOU BEGIN ***</p>
+
+<p>***** BACKUP YOUR STORE BEFORE YOU BEGIN*****</p>
+</div>
+
+<fieldset>
+<legend>New Installation</legend>
+<p>Google Snippets with Microdata includes an 
+  
+  AUTO INSTALLER.
+  
+  No more external SQL files needed to install/upgrade Google Snippets with Microdata. Whether you are upgrading from a previous Google Snippets with Microdata install or doing a vanilla Google Snippets with Microdata install, the auto installer has got you covered.  <strong>Please note: </strong> Uninstall is not automated. So to uninstall you will still need to use an external SQL file.. </p>
+<p>YOU DO NOT NEED TO RUN THE UNINSTALL SQL when upgrading.. <br>
+  <br>
+  Let me repeat..<br>
+  <br>
+  <strong>YOU DO NOT NEED TO RUN THE UNINSTALL SQL when upgrading!!!!!!</strong> The Google Snippets with Microdata autoinstaller will do a cleanup of any previous installation.<br>
+  <br>
+To install/upgrade Google Snippets with Microdata: </p>
+<ol>
+  <li>Unzip the package contents to a temp directory</li>
+    <li>Rename  the <strong>YOUR_ADMIN</strong> folder in the <strong>1_install_files</strong> folder to match the name of your shop's admin folder.. Let me repeat
+  this as this is one step in module installs that most OFTEN gets overlooked/missed:
+  <br><br>
+  <div class="boldemphasis">Rename the YOUR_ADMIN folders to match the name of your shop's admin folder</div>
+	<div class="emphasis">These are core files. If you have installed any mods which make changes to the files in this folder, you 
+	will need to use a tool like Winmerge or Beyond Compare to incorporate those changes into these files.</div>
+  </li>
+    <li>Rename  the <strong>YOUR_TEMPLATE</strong> folder in the <strong>1_install_files</strong> folder to match the name of your shop's template folder. Let me repeat
+  this as this is another one step in module installs that most OFTEN gets overlooked/missed:
+  <br>
+  <br>
+  <div class="boldemphasis">Rename the YOUR_TEMPLATE folders to match the name of your shop's template folder</div>
+	<div class="emphasis">If you have installed any mods which make changes to the files in this folder, you 
+	will need to use a tool like Winmerge or Beyond Compare to incorporate those changes into these files.</div>
+  </li>
+	<li>Log into your store's admin before uploading the files. <div class="emphasis">If you  log into your store after uploading the files, the auto-install will still ocurr, but you will not see the install confimation message. (this is because the auto-install will take place during the login action and the confirmation message will not display during the login process)</div></li>
+	<li>FTP the CONTENTS of <strong>[temp directory]/1_install_files</strong> into the ROOT of your Zen Cart installation. 
+	  The files are already arranged following the Zen Cart folder structure.</li>
+	<li>Once the files are uploaded, click ANY link in your store's admin, and the auto-installer will be triggered. If you have followed the install instructions, you will see the installation confirmation message.</li>
+	</ol>
+</fieldset>
+
+<hr>
+<fieldset>
+<legend>Uninstall Google Snippets with Microdata</legend>
+<ol>
+	<li>Remove all the Google Snippets with Microdata custom  files and reverse any changes made to modified core files.</li>
+	<li>Run the <strong>gsmd_uninstall.sql</strong> using the "SQL Query Executor" tool in the Admin (Tools &gt; Install SQL Patches)</li>
+</ol>
+</fieldset>
+
+
+</div>
+</div>
+</div>
+<!--End sc2-->
+
+
+<!--Begin sc3-->
+<div class="tabcontent" id="sc3" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+<h3>CONFIGURE &amp; FEATURES</h3><br>
+
+<fieldset>
+<legend>Configuring Google Snippets with Microdata
+
+</legend><ol>
+	<li>	Go to <strong>Admin &gt; Configuration &gt; Google Snippets with Microdata</strong>, you'll find all the configurable options in there, with explanations and instructions.	</li>
+</ol>
+
+</fieldset>
+</div>
+</div>
+</div>
+<div class="tabcontent" id="sc4" style="display: block;">
+  <div class="textcontent">
+    <div class="regularlist"> </div>
+</div>
+</div>
+<!--End sc4-->
+
+
+<!--Begin sc5-->
+<div class="tabcontent" id="sc5" style="display: block;">
+<div class="textcontent">
+<div class="filelist">
+
+<h3>FILES</h3>
+
+<fieldset>
+<legend>Database &amp; License Files</legend>
+<ul>
+  <li>3_SQL/a_super_orders_uninstall.sql</li>
+  <li>LICENSE.txt</li>
+</ul>
+</fieldset>
+
+<fieldset>
+<legend>Google Snippets with Microdata Files</legend>
+
+<ul>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_batch_forms.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_batch_pages.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_batch_status.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_data_sheet.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_edit.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_payment_types.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_payments.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_report_await_pay.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_report_cash.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_shipping_label.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/super_stylesheet.css</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/srap_print.css</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/formval.js</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/popup.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/customer.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/super_order.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/fpdf.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/courier.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helvetica.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helveticab.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helveticabi.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helveticai.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/symbol.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/times.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/timesb.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/timesbi.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/timesi.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/zapfdingbats.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp874.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1250.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1251.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1252.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1253.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1254.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1255.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1257.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1258.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-1.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-2.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-4.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-5.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-7.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-9.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-11.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-15.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-16.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/koi8-r.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/koi8-u.map</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/makefont.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/extra_datafiles/super_orders_defines.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/functions/extra_functions/super_orders_functions.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/functions/extra_functions/orders_common_functions.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/functions/extra_functions/lcsd_merged_packing_slips.php</li>
+	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_batch_status.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_edit.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_orders.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_report_await_pay.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_packingslip.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_report_cash.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_invoice.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_payment_types.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_payments.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_data_sheet.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_batch_forms.php</li>
+    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/order_status_email.php</li>
+	<li>1_Base_Files/includes/classes/super_order.php</li>
+	<li>1_Base_Files/includes/extra_datafiles/super_orders_defines.php</li>
+	<li>1_Base_Files/includes/languages/english/modules/payment/purchaseorder.php</li>
+	<li>1_Base_Files/includes/modules/payment/purchaseorder.php</li>
+</ul>
+</fieldset>
+
+</div>
+</div>
+</div>
+<!--End sc5-->
+
+
+<!--Begin sc6-->
+<div class="tabcontent" id="sc6" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h3>CREDITS &amp; HISTORY</h3>
+<fieldset>
+<legend>Acknowledgements</legend>
+<ul>
+	<li> Based on the Pro-Webs <a href="http://pro-webs.net/blog/2012/09/25/customizing-google-snippets-with-schema-org-microdata/" title="Customizing Google Snippets with Schema.org Microdata">tutorial to implement 
+Rich Snippets Product Microdata for your Zen Cart product pages</a></li>
+</ul>
+
+
+<p>Google Snippets with Microdata contributors:</p>
+
+<ul>
+  <li>C Jones  - Over the Hill Web Consulting (http://overthehillweb.com)</li>
+</ul>
+</fieldset>
+
+<fieldset>
+<legend>Change Log</legend>
+
+<h3>v1.4</h3>
+<ul>
+  <li>Initial Release</li>
+</ul>
+</fieldset>
+
+</div>
+</div>
+</div>
+<!--End sc6-->
+
+
+<!--Begin sc7-->
+<div class="tabcontent" id="sc7" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h3>LICENSE</h3>
+<p>Google Snippets with Microdata is released under the General Public License (see LICENSE.txt)</p>
+
+<p>This script is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>Always backup your shop and database before making changes.</p>
+
+<p>Original Super Orders code development sponsored by Destination ImagiNation, Inc.</p>
+
+<ul>
+  <li> www.destinationimagination.org</li>
+  <li> www.idodi.org </li>
+</ul>
+
+</div>
+</div>
+</div>
+<!--End sc7-->
+
+
+</div>
+<!--end tabcontainer-->
+
+
+<script type="text/javascript">document.getElementById('sc2').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc3').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc4').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc5').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc6').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc7').style.display = 'none';</script>
+<script type="text/javascript">ShowTabs()</script>
+<script type="text/javascript">
+// We only show the tab links if JavaScript is available/active.
+<!--
+if (document.getElementById("slidetabsmenu") != null) {
+  document.getElementById('slidetabsmenu').style.display = "block";
+}
+//-->
+</script><br>
+<br>
+<p><a href="http://validator.w3.org/check/referer" target="_blank"><img src="http://www.w3.org/Icons/valid-html401-blue.gif" alt="W3C validation logo" border="0" height="31" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" border="0" height="31" width="88"></a></p>
+<br>
+<br>
+</div>
+
+</body></html>
