@@ -60,7 +60,7 @@
     $db->Execute($sql);
     $sql = "INSERT INTO ".DB_PREFIX."configuration VALUES (NULL, 'Enable Delivery Lead Time?', 'MICRODATA_PRODUCT_DELIVERY_YN', 'False', 'Enable delivery lead time',  '".$gsmd_configuration_id."', 55, now(), now(), NULL, 'zen_cfg_select_option(array(''True'', ''False''),')";
     $db->Execute($sql);
-    $sql = "INSERT INTO ".DB_PREFIX."configuration VALUES (NULL, 'Enable Shipping Region(s)', 'MICRODATA_PRODUCT_SHIPTO_YN', 'False', 'Enable shipping region(s)',  '".$gsmd_configuration_id."', 60, now(), now(), NULL, 'zen_cfg_select_option(array(''True'', ''False''),')";
+    $sql = "INSERT INTO ".DB_PREFIX."configuration VALUES (NULL, 'Enable Shipping Region(s)?', 'MICRODATA_PRODUCT_SHIPTO_YN', 'False', 'Enable shipping region(s)',  '".$gsmd_configuration_id."', 60, now(), now(), NULL, 'zen_cfg_select_option(array(''True'', ''False''),')";
     $db->Execute($sql);
 //-- GOOGLE SNIPPETS WITH MICRODATA VERSION
     $sql = "INSERT INTO ".DB_PREFIX."configuration VALUES (NULL, 'Google Snippets with Microdata Version', 'GSMD_VERSION', '1.4', 'Google Snippets with Microdata Version', '".$gsmd_configuration_id."', 999, NULL, now(), NULL, NULL)";
