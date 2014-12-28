@@ -12,7 +12,7 @@
  * @version $Id: tpl_document_product_info_display.php 19690 2011-10-04 16:41:45Z drbyte $
  */
 ?>
-<div class="centerColumn" id="docProduct" itemscope itemtype="http://data-vocabulary.org/Product"><!-- Setting up the container for the product schema -->
+<div class="centerColumn" id="docProductDisplay" itemscope itemtype="http://data-vocabulary.org/Product"><!-- Setting up the container for the product schema -->
 
 <!--bof Form start-->
 <?php echo zen_draw_form('cart_quantity', zen_href_link(zen_get_info_page($_GET['products_id']), zen_get_all_get_params(array('action')) . 'action=add_product', $request_type), 'post', 'enctype="multipart/form-data"') . "\n"; ?>
