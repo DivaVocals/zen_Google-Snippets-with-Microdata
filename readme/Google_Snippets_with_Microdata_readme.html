@@ -7,16 +7,16 @@
   <meta http-equiv="pragma" content="no-cache">  
   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">  
   <meta http-equiv="content-language" content="en">  
-  <meta name="author" content="JT of GTICustom, C Jones Over the Hill Web Consulting (http://overthehillweb.com), Loose Chicken Software Development, david@loosechicken.com">  
-  <meta name="description" content="Super Orders is exactly what its name implies: Zen Cart order management on steroids">
-  <title>Super Orders 4.0.7</title>
+  <meta name="author" content="C Jones Over the Hill Web Consulting (http://overthehillweb.com)">  
+  <meta name="description" content="This addon will add rich snippets feature to your Zen Cart online shop products in html 5 Microformats.">
+  <title>Google Snippets with Microdata v1.4</title>
     
   <link rel="stylesheet" type="text/css" href="includes/css/stylesheet.css">  
   <script type="text/javascript" src="includes/jscript/jscript_tabs.js"></script>
   </head>
   <body>
 <div id="wrapper">
-<h2>Super Orders 4.0.7</h2>
+<h2>Google Snippets with Microdata v1.4</h2>
 <!--<p>Support thread: <a href="http://www.zen-cart.com/forum/showthread.php?t=44668" target="_blank">http://www.zen-cart.com/forum/showthread.php?p=886839</a><br>
 Download link: <a href="http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=257" target="_blank">http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=743</a></p>-->
 <div id="slidetabsmenu" style="display: none;">
@@ -45,10 +45,10 @@ Download link: <a href="http://www.zen-cart.com/index.php?main_page=product_cont
 
 <fieldset>
 <legend>What is Google Snippets with Microdata?</legend>
-<p>This addon will add rich snippets feature to your Zen Cart online shop over votes for Zen Cart products in html 5 Microformats.</p>
+<p>This addon will add rich snippets feature to your Zen Cart online shop products in html 5 Microformats.</p>
 
 <p>It is based on the Pro-Webs <a href="http://pro-webs.net/blog/2012/09/25/customizing-google-snippets-with-schema-org-microdata/" title="Customizing Google Snippets with Schema.org Microdata">tutorial to implement 
-Rich Snippets Product Microdata for your Zen Cart product pages</a>. After install you will see new option in administration to configure the various microdata options.</p>
+Rich Snippets Product Microdata for your Zen Cart product pages</a>. After install you will see a new option in administration to configure the various microdata options.</p>
 
 <p><strong>The applicable tags available currently for Rich Snippets Product are as follows:</strong></p>
 <ul>
@@ -183,7 +183,7 @@ To install/upgrade Google Snippets with Microdata: </p>
 <fieldset>
 <legend>Database &amp; License Files</legend>
 <ul>
-  <li>3_SQL/a_super_orders_uninstall.sql</li>
+  <li>3_SQL/GSMD_uninstall.sql</li>
   <li>LICENSE.txt</li>
 </ul>
 </fieldset>
@@ -192,75 +192,20 @@ To install/upgrade Google Snippets with Microdata: </p>
 <legend>Google Snippets with Microdata Files</legend>
 
 <ul>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_batch_forms.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_batch_pages.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_batch_status.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_data_sheet.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_edit.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_payment_types.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_payments.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_report_await_pay.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_report_cash.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/super_shipping_label.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/super_stylesheet.css</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/srap_print.css</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/formval.js</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/popup.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/customer.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/super_order.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/fpdf.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/courier.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helvetica.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helveticab.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helveticabi.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/helveticai.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/symbol.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/times.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/timesb.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/timesbi.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/timesi.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/zapfdingbats.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp874.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1250.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1251.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1252.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1253.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1254.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1255.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1257.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/cp1258.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-1.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-2.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-4.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-5.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-7.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-9.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-11.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-15.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/iso-8859-16.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/koi8-r.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/koi8-u.map</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/classes/fpdf/font/makefont/makefont.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/extra_datafiles/super_orders_defines.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/functions/extra_functions/super_orders_functions.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/functions/extra_functions/orders_common_functions.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/functions/extra_functions/lcsd_merged_packing_slips.php</li>
-	<li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_batch_status.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_edit.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_orders.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_report_await_pay.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_packingslip.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_report_cash.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_invoice.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_payment_types.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_payments.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_data_sheet.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/super_batch_forms.php</li>
-    <li>1_Base_Files/YOUR_ADMIN_FOLDER/includes/languages/english/order_status_email.php</li>
-	<li>1_Base_Files/includes/classes/super_order.php</li>
-	<li>1_Base_Files/includes/extra_datafiles/super_orders_defines.php</li>
-	<li>1_Base_Files/includes/languages/english/modules/payment/purchaseorder.php</li>
-	<li>1_Base_Files/includes/modules/payment/purchaseorder.php</li>
+    <li>1_install_files\includes\classes\breadcrumb.php</li>
+    <li>1_install_files\includes\functions\html_output.php</li>
+    <li>1_install_files\includes\languages\english\extra_definitions\custom_template\document_product.php</li>
+    <li>1_install_files\includes\languages\english\extra_definitions\custom_template\product.php</li>
+    <li>1_install_files\includes\languages\english\extra_definitions\custom_template\product_free_shipping.php</li>
+    <li>1_install_files\includes\languages\english\extra_definitions\custom_template\product_music.php</li>
+    <li>1_install_files\includes\templates\custom_template\common\tpl_main_page.php</li>
+    <li>1_install_files\includes\templates\custom_template\templates\tpl_document_product_info_display.php</li>
+    <li>1_install_files\includes\templates\custom_template\templates\tpl_product_free_shipping_info_display.php</li>
+    <li>1_install_files\includes\templates\custom_template\templates\tpl_product_info_display.php</li>
+    <li>1_install_files\includes\templates\custom_template\templates\tpl_product_music_info_display.php</li>
+    <li>1_install_files\YOUR_ADMIN\includes\auto_loaders\config.gsmd.php</li>
+    <li>1_install_files\YOUR_ADMIN\includes\extra_datafiles\microdata_defines.php</li>
+    <li>1_install_files\YOUR_ADMIN\includes\init_includes\init_gsmd_config.php</li>
 </ul>
 </fieldset>
 
@@ -316,14 +261,6 @@ Rich Snippets Product Microdata for your Zen Cart product pages</a></li>
 
 <p>This script is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
 <p>Always backup your shop and database before making changes.</p>
-
-<p>Original Super Orders code development sponsored by Destination ImagiNation, Inc.</p>
-
-<ul>
-  <li> www.destinationimagination.org</li>
-  <li> www.idodi.org </li>
-</ul>
-
 </div>
 </div>
 </div>
